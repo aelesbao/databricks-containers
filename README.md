@@ -11,13 +11,14 @@ documentation.
 
 ### Data Engineering
 
-The [data-engineering](./data-engineering/Dockerfile) image has support for:
+The [data-engineering](./data-engineering/Dockerfile) image is based on Alpine
+Linux and has support for:
 
 - Scala Notebooks
 - Java/Jar jobs
 - Spark Submit Jobs
 - DBFS FUSE (mounts DBFS to the local filesystem at `/dbfs`)
-- SSH (with `ubuntu` user)
+- SSH (with `alpine` user)
 - %sh
 
 > Since this image doesn't install Python, it requires at least the
